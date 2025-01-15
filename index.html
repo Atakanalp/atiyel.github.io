@@ -78,6 +78,17 @@
         .active {
             display: block; /* Bu sınıfla işaretlenen içerik görünür olacak */
         }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #e2e8f0;
+        }
     </style>
 </head>
 <body>
@@ -118,6 +129,19 @@
             </p>
             <div class="graph-container">
                 <iframe src="top 20 countries medals.html" class="w-full h-96 border border-gray-300"></iframe>
+            </div>
+
+            <!-- Eklenen yazı ve görsel -->
+            <div class="text-gray-700 mt-8">
+                <h3 class="text-xl font-semibold mb-4">Medal Count Trends from 1976 to 2024</h3>
+                <p>
+                    The chart below illustrates the medal counts for the USA, Germany, and Russia across multiple Summer Olympics from 1976 to 2024. These countries' performances have been heavily influenced by geopolitical events, including the Cold War and shifts in global political alliances. The visual representation provides insight into how these countries' medal tallies evolved over time, showcasing the impact of social, cultural, and political factors on their Olympic strategies and successes.
+                </p>
+            </div>
+
+            <!-- Görsel -->
+            <div class="image-container">
+                <img src="medals count 1976-2024.png" alt="Medal Count 1976-2024">
             </div>
         </section>
     </div>
