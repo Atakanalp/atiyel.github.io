@@ -7,12 +7,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         .header-background {
-            background-image: url("wallpaper.jpg"); 
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url("wallpaper.jpg"); 
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
             position: relative;
-            height: 400px; 
+            height: 600px; 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -20,19 +22,20 @@
 
         .header-title {
             color: white;
-            font-size: 3rem;
+            font-size: 4rem; 
             font-weight: bold;
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Metne gölge efekti */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
         }
     </style>
 </head>
 <body>
-    <!-- Başlık Bölümü -->
+    
     <header class="header-background">
         <h1 class="header-title">Summer Olympics 2024</h1>
     </header>
 
+   
     <div class="container mx-auto px-4 py-12">
         <section class="bg-white p-8 rounded-lg shadow-md">
             <h2 class="text-2xl font-semibold text-blue-800 mb-6">Introduction</h2>
@@ -42,6 +45,7 @@
         </section>
     </div>
 
+    
     <footer class="bg-blue-700 text-white py-6 text-center mt-12">
         <p>&copy; 2024 Summer Olympics. All rights reserved.</p>
     </footer>
