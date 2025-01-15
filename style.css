@@ -1,0 +1,34 @@
+.hero {
+    background-image: url('background.jpg'); /* Fotoğraf dosyanızın adı */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+}
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Olympics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to the Summer Olympics</h1>
+        <p>This is a site dedicated to providing information and updates about the Summer Olympics. Stay tuned for more!</p>
+    </div>
+
+    <h2>About the Olympics</h2>
+    <p>The Summer Olympics is an international multi-sport event held every four years, featuring athletes from around the world competing in various disciplines.</p>
+
+    <h2>Latest News</h2>
+    <ul>
+        <li>Exciting updates coming soon!</li>
+    </ul>
+</body>
+</html>
