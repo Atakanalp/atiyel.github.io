@@ -1,34 +1,49 @@
-.hero {
-    background-image: url('background.jpg'); /wallpaper.jpg/
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: Arial, sans-serif;
-}
-<link rel="stylesheet" href="style.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Olympics</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Summer Olympics 2024</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .header-background {
+            background-image: url("wallpaper.jpg"); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            position: relative;
+            height: 400px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-title {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Metne gölge efekti */
+        }
+    </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Welcome to the Summer Olympics</h1>
-        <p>This is a site dedicated to providing information and updates about the Summer Olympics. Stay tuned for more!</p>
+    <!-- Başlık Bölümü -->
+    <header class="header-background">
+        <h1 class="header-title">Summer Olympics 2024</h1>
+    </header>
+
+    <div class="container mx-auto px-4 py-12">
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6">Introduction</h2>
+            <p class="text-gray-700">
+                The Summer Olympics is a global celebration of athletic excellence, unity, and determination.
+            </p>
+        </section>
     </div>
 
-    <h2>About the Olympics</h2>
-    <p>The Summer Olympics is an international multi-sport event held every four years, featuring athletes from around the world competing in various disciplines.</p>
-
-    <h2>Latest News</h2>
-    <ul>
-        <li>Exciting updates coming soon!</li>
-    </ul>
+    <footer class="bg-blue-700 text-white py-6 text-center mt-12">
+        <p>&copy; 2024 Summer Olympics. All rights reserved.</p>
+    </footer>
 </body>
 </html>
