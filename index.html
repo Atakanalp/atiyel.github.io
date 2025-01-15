@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Culture and Social Dynamics Shaped Summer Olympic Medals for the USA, Germany, and Russia </title>
+    <title>How Culture and Social Dynamics Shaped Summer Olympic Medals for the USA, Germany, and Russia</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        
         body {
             background: #f7fafc; 
             font-family: 'Arial', sans-serif;
         }
 
         
+        .nav-bar {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-bar a:hover {
+            color: #2b6cb0;
+        }
+
+       
         .header-background {
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url("wallpaper.jpg"); 
-            background-size: contain; 
+            background-size: cover; 
             background-position: center center; 
             background-repeat: no-repeat;
             height: 500px;
@@ -25,18 +46,18 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            padding-top: 60px; 
         }
 
-        
         .header-title {
             color: white;
-            font-size: 4rem;
+            font-size: 4.5rem;
+            font-family: 'Georgia', serif; 
             font-weight: bold;
             text-align: center;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
         }
 
-        /
         .content-section {
             background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
             padding: 40px;
@@ -47,7 +68,6 @@
             background-color: #ffffff; 
         }
 
-        
         footer {
             background-color: #2b6cb0; 
             color: white;
@@ -57,26 +77,34 @@
     </style>
 </head>
 <body>
-<nav class="mb-12 flex justify-center space-x-4">
-            <a href="research-question-1.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
-                Introduction
-            <a href="research-question-2.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
-                Navigation Structure
-            </a>
+
+   
+    <div class="nav-bar">
+        <a href="#introduction">Introduction</a>
+        <a href="#visualization">Visualization</a>
+    </div>
+
     
     <header class="header-background">
-        <h1 class="header-title">How Culture and Social Dynamics Shaped Summer Olympic Medals for the USA, Germany, and Russia</h1>
+        <h1 class="header-title">Summer Olympics</h1>
     </header>
 
     
     <div class="container mx-auto px-4 py-12">
-        <section class="content-section">
+        <section id="introduction" class="content-section">
             <h2 class="text-2xl font-semibold text-blue-800 mb-6">Introduction</h2>
             <p class="text-gray-700">
                 The Olympic Games have always been more than just a global sporting event; they serve as a mirror reflecting the political, cultural, and social dynamics of nations. Over the decades, countries like the United States, Germany,
                 and Russia have dominated the medal counts, with their performances deeply intertwined with their histories. These nations' approaches to the Olympics have been influenced by wars, political ideologies, economic changes, and shifts in societal values.
                 This analysis explores how cultural and social factors shaped the medal achievements of the USA, Germany, and Russia in the Summer Olympics. By examining data trends from 1976 to 2024, we uncover the stories behind the numbers. 
                 The graphs below highlight key comparisons and trends that reveal the intersection of sports and socio-political history, providing valuable insights into the broader significance of the Games for these nations.
+            </p>
+        </section>
+        
+        <section id="visualization" class="content-section">
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6">Visualization</h2>
+            <p class="text-gray-700">
+                
             </p>
         </section>
     </div>
