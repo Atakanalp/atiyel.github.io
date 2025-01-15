@@ -11,7 +11,6 @@
             font-family: 'Arial', sans-serif;
         }
 
-        
         .nav-bar {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px 20px;
@@ -33,7 +32,6 @@
             color: #2b6cb0;
         }
 
-       
         .header-background {
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
@@ -66,6 +64,7 @@
             max-width: 800px;
             margin: auto;
             background-color: #ffffff; 
+            display: none; /* Başlangıçta tüm bölümler gizli */
         }
 
         footer {
@@ -74,24 +73,24 @@
             padding: 20px;
             text-align: center;
         }
+
+        /* Aktif olan bölüm için stil */
+        .active {
+            display: block; /* Bu sınıfla işaretlenen içerik görünür olacak */
+        }
     </style>
 </head>
 <body>
 
-   
     <div class="nav-bar">
-        <a href="#introduction">Introduction</a>
-        <a href="#visualization">Visualization</a>
-    
+        <a href="#" onclick="showSection('introduction')">Introduction</a>
+        <a href="#" onclick="showSection('visualization')">Visualization</a>
+    </div>
 
-        </div>
-
-    
     <header class="header-background">
         <h1 class="header-title">How Culture and Social Dynamics Shaped Summer Olympic Medals for the USA, Germany, and Russia</h1>
     </header>
 
-    
     <div class="container mx-auto px-4 py-12">
         <section id="introduction" class="content-section">
             <h2 class="text-2xl font-semibold text-blue-800 mb-6">Introduction</h2>
@@ -102,19 +101,36 @@
                 The graphs below highlight key comparisons and trends that reveal the intersection of sports and socio-political history, providing valuable insights into the broader significance of the Games for these nations.
             </p>
         </section>
-        
+
         <section id="visualization" class="content-section">
             <h2 class="text-2xl font-semibold text-blue-800 mb-6">Visualization</h2>
             <p class="text-gray-700">
-                
+                <!-- Buraya görselle ilgili içerik ekleyebilirsiniz -->
+                In this section, we will showcase various visualizations like graphs and charts that depict the trends in Summer Olympic medals.
             </p>
         </section>
     </div>
 
-    
     <footer>
         <p>&copy; All rights reserved.</p>
     </footer>
+
+    <script>
+        // Başlangıçta 'introduction' bölümünü aktif hale getiriyoruz
+        document.getElementById('introduction').classList.add('active');
+        
+        function showSection(sectionId) {
+            // Tüm bölümleri gizle
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Seçilen bölümü göster
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
