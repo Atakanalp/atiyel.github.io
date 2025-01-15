@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Olympics</title>
+    <title>Summer Olympics 2024</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         .header-background {
             background-image: 
-                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url("wallpaper.jpg"); 
-            background-size: contain; 
-            background-position: center; 
-            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat; 
             background-color: #f3f4f6; 
             position: relative;
-            height: 600px;
+            height: 600px; 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,11 +28,70 @@
             text-align: center;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
         }
+
+        
+        .olympic-rings-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 8px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .flame-icon {
+            width: 80px;
+            height: 80px;
+            background-image: url('flame-icon.png'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+        }
+
+    
+        .rings {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top: 25%;
+            width: 80%;
+        }
+
+        .ring {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        .ring-1 { background-color: #008C45; }
+        .ring-2 { background-color: #F4C300; }
+        .ring-3 { background-color: #0066B3; }
+        .ring-4 { background-color: #FF6A13; }
+        .ring-5 { background-color: #C8102E; }
     </style>
 </head>
 <body>
    
     <header class="header-background">
+        <div class="olympic-rings-container">
+            <div class="flame-icon"></div> 
+            <div class="rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <div class="ring ring-4"></div>
+                <div class="ring ring-5"></div>
+            </div>
+        </div>
         <h1 class="header-title">Summer Olympics 2024</h1>
     </header>
 
@@ -46,7 +105,7 @@
         </section>
     </div>
 
-    
+   
     <footer class="bg-blue-700 text-white py-6 text-center mt-12">
         <p>&copy; 2024 Summer Olympics. All rights reserved.</p>
     </footer>
