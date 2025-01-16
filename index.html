@@ -64,7 +64,7 @@
             max-width: 800px;
             margin: auto;
             background-color: #ffffff; 
-            display: none; /* Başlangıçta tüm bölümler gizli */
+            display: none; 
         }
 
         footer {
@@ -74,9 +74,9 @@
             text-align: center;
         }
 
-        /* Aktif olan bölüm için stil */
+        
         .active {
-            display: block; /* Bu sınıfla işaretlenen içerik görünür olacak */
+            display: block; 
         }
 
         .image-container {
@@ -109,7 +109,7 @@
                 The Olympic Games have always been more than just a global sporting event; they serve as a mirror reflecting the political, cultural, and social dynamics of nations. Over the decades, countries like the United States, Germany,
                 and Russia have dominated the medal counts, with their performances deeply intertwined with their histories. These nations' approaches to the Olympics have been influenced by wars, political ideologies, economic changes, and shifts in societal values.
                 This analysis explores how cultural and social factors shaped the medal achievements of the USA, Germany, and Russia in the Summer Olympics. By examining data trends from 1976 to 2024, we uncover the stories behind the numbers. 
-                The graphs below highlight key comparisons and trends that reveal the intersection of sports and socio-political history, providing valuable insights into the broader significance of the Games for these nations.
+                
             </p>
         </section>
 
@@ -132,7 +132,7 @@
             </div>
             <br>
 
-            <!-- Eklenen yazı ve görsel -->
+            
             <div class="text-gray-700 mb-6">
                 <p>
                     The second graph shows the detailed changes in medals won by the USA, Germany, and Russia in the Summer Olympics from 1976 onwards. These changes are directly related to significant events in each country's historical processes.<br>
@@ -151,13 +151,13 @@
                 </p>
             </div>
 
-            <!-- Görsel -->
+            
             <div class="image-container">
                 <img src="medals count 1976-2024.png" alt="Medal Count 1976-2024">
             </div>
             <br>
 
-            <!-- Yeni eklenen kısım -->
+            
             <div class="text-gray-700 mb-6">
                 <p>
                     Next chart illustrates the distribution of medals won by the USA, Germany, and Russia in athletics events during theSummer Olympics. Athletics is a significant component of the Olympic success for these countries.<br>
@@ -170,9 +170,9 @@
                 </p>
             </div>
 
-            <!-- Atletizm görseli -->
+            
           <div class="image-container">
-              <img src="total medals by countries atletics.png" alt="Total Medals By Countries Atletics" style="width: 800px; height: auto;">
+              <img src="total medals by countries atletics.png" alt="Total Medals By Countries Atletics" style="width: 1000px; height: 600;">
           </div>
             <br>
          
@@ -229,17 +229,17 @@
     </footer>
 
     <script>
-        // Başlangıçta 'introduction' bölümünü aktif hale getiriyoruz
+        
         document.getElementById('introduction').classList.add('active');
         
         function showSection(sectionId) {
-            // Tüm bölümleri gizle
+            
             const sections = document.querySelectorAll('.content-section');
             sections.forEach(section => {
                 section.classList.remove('active');
             });
             
-            // Seçilen bölümü göster
+            
             const selectedSection = document.getElementById(sectionId);
             selectedSection.classList.add('active');
         }
